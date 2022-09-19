@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="E-commerce product">
+    <meta name="keywords" content="Game, Pair Game">
+    <meta name="author" content="Levi Domingos">
+    <link rel="stylesheet" type="text/css" href="./static/css/main.css">
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+
+  <body>  
+    <div id ="mobile-nav" class="hide-any-element">
+      <div id ="close-menu" class="close"></div>
+    </div>
+
+    <div id ="id-showing-basket" class="">
+    </div>
+
+    <div id ="id-activate-states-lightbox" class="hide-any-element">
+
+      <div class ="square-lightbox">
+        <div id="id-close-lightbox" class="close-lightbox"> </div>
+
+        <img id ="id-square-lightbox-main-img"src="static/images/image-product-1.jpg" class="square-lightbox-main-img">
+        
+        <div class="img-buttons-lightbox">
+          <div id ="id-lightbox-previews-img" class="lightbox-previews-img"></div>
+          <div id ="id-lightbox-next-img" class="lightbox-next-img"></div>
+        </div>
+
+        <div class="thumbnail-lightbox">
+          <div><img id ="box-1" src="static/images/image-product-1-thumbnail.jpg" class="four-lightbox-imgs" alter="sneackers"></div>
+          <div><img id ="box-2" src="static/images/image-product-2-thumbnail.jpg" class="four-lightbox-imgs" alter="sneackers"></div>
+          <div><img id ="box-3" src="static/images/image-product-3-thumbnail.jpg" class="four-lightbox-imgs" alter="sneackers"></div>
+          <div><img id ="box-4" src="static/images/image-product-4-thumbnail.jpg" class="four-lightbox-imgs" alter="sneackers"></div>
+        </div>
+
+      </div>
+      
+    </div>
+
+    
+    <nav class="nav-container">
+      <div id ="id-toggle-menu" class="toggle-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="sneackers">sneackers
+
+      </div>
+      <ul>
+        <li>
+           <a class="">Collection</a>      
+         </li>
+         <li>
+           <a class="">Men</a>
+         </li>
+         <li>
+           <a class="">Women</a>
+         </li>
+         <li>
+           <a class="">About</a>
+         </li>
+         <li>
+           <a class="">Contact</a>
+        </li>
+
+      </ul>
+      <div id ="shopping-cart" class="cart">
+        <div id ="id-items" class=""></div>
+        
+        <img id ="id-shopping-basket" src ="static/images/icon-cart.svg" class="cart-avatar" alt="sneackers">
+      </div>
+      
+      <div class="avatar">
+        <img src ="static/images/image-avatar.png" class="cart-avatar" alt="sneackers">
+      </div>
+    </nav>
+
+    <main class="main-container">
+      
+      <section class="flex-section-one">
+        <div class="main-picture">
+          <img id ="id-main-img" src="static/images/image-product-1.jpg" class="img-size" alt="sneackers">
+          
+          <div class="img-buttons">
+            <div id="id-previews" class="previews-img"></div>
+            <div id="id-next" class="next-img"></div>
+          </div>
+
+          <div class ="thumbnail-section">
+            <div class="img-1">
+              <img id ="id-img-1" src ="static/images/image-product-1-thumbnail.jpg" class="four-pics" alt="sneackers">
+            </div>
+            <div class="img-2">
+              <img id ="id-img-2" src ="static/images/image-product-2-thumbnail.jpg" class="four-pics" alt="sneackers">
+            </div>
+            <div class="img-3">
+              <img id ="id-img-3" src ="static/images/image-product-3-thumbnail.jpg" class="four-pics" alt="sneackers">
+            </div>
+            <div class="img-4">
+              <img id ="id-img-4" src ="static/images/image-product-4-thumbnail.jpg" class="four-pics" alt="sneackers">
+            </div>
+          </div>
+
+        </div>
+       
+      </section>
+
+      <section class="flex-section-two">
+        <div class ="title">
+          <h6>sneackers company</h6>
+          <h2>Fall Limited Edition <br> Sneackers</h3>
+        </div>
+        
+        <div class="item-description">
+            <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+              durable rubber outer sole, they will withstand everything the weather can offer.
+            </p>
+          </div>
+          
+          <div class="item-price"> 
+            <p class="price">$125.00<span class="discount"></span></p>
+            <p class="original-price"></p>
+          </div>
+        </div>
+
+        <div class="buttoms-container">
+          <div class="btn">
+            <li><a id="minus">-</a></li>
+            <li><a id="zero">0</a></li>
+            <li><a id="plus">+</a></li>
+          </div>
+
+          <div id ="id-add-to-basket" class="add-to-basket">
+            <img src="static/images/icon-cart.svg" alt="sneackers"><span>add to cart</span>
+          </div>
+
+        </div>
+      </section>
+    </main>
+    <script src ="static/javaScript/mainJavaScript.js"></script>
+  
+  </body>
+</html>
