@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="E-commerce product">
+    <meta name="keywords" content="Game, Pair Game">
+    <meta name="author" content="Levi Domingos">
+    <link rel="stylesheet" type="text/css" href="./static/css/main.css">
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+
+  <body>  
+    <div id ="mobile-nav" class="hide-any-element">
+      <div id ="close-menu" class="close"></div>
+    </div>
+
+    <div id ="id-showing-basket" class="show-shopping-basket">
+      <div id="idCart" class="showGoods">
+        <div class="topCart">cart</div>
+        <div>
+          <hr>
+        </div>
+        <div class="imageInfoPrice">
+          <div id="idImg"><img src="static/images/image-product-1.jpg"></div>
+          <div id="idInfo" class="limitedEdition">
+            <P id="idDescription">Limited Edition...</P>
+            <P id="idPrice"></P>
+          </div>
+          <div id="idIconDelete" class="bin">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+       <div id="idButtonDelete" class="checkOutBasket"><span>checkout</span>
+       </div>
+      </div>
+    </div>
+
+    <div id ="id-activate-states-lightbox" class="hide-any-element">
+
+      <div class ="square-lightbox">
+        <div id="id-close-lightbox" class="close-lightbox"> </div>
+
+        <img id ="idSquareLightboxMainImg"src="static/images/image-product-1.jpg" class="square-lightbox-main-img">
+        
+        <div class="img-buttons-lightbox">
+          <div data-cell-index="1" class="lightbox-previews-img classLightBox"></div>
+          <div data-cell-index="2" class="lightbox-next-img classLightBox"></div>
+        </div>
+
+        <div class="thumbnail-lightbox">
+          <div><img data-cell-index="1" src="static/images/image-product-1-thumbnail.jpg" class="fourLightboxImgs" alter="sneackers"></div>
+          <div><img data-cell-index="2" src="static/images/image-product-2-thumbnail.jpg" class="fourLightboxImgs" alter="sneackers"></div>
+          <div><img data-cell-index="3" src="static/images/image-product-3-thumbnail.jpg" class="fourLightboxImgs" alter="sneackers"></div>
+          <div><img data-cell-index="4" src="static/images/image-product-4-thumbnail.jpg" class="fourLightboxImgs" alter="sneackers"></div>
+        </div>
+
+      </div>
+      
+    </div>
+
+    
+    <nav class="nav-container">
+      <div id ="id-toggle-menu" class="toggle-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="sneackers">sneackers
+
+      </div>
+      <ul>
+        <li>
+           <a class="">Collection</a>      
+         </li>
+         <li>
+           <a class="">Men</a>
+         </li>
+         <li>
+           <a class="">Women</a>
+         </li>
+         <li>
+           <a class="">About</a>
+         </li>
+         <li>
+           <a class="">Contact</a>
+        </li>
+
+      </ul>
+      <div id ="shopping-cart" class="cart">
+        <div id ="id-items" class=""></div>
+        
+        <img id ="id-shopping-basket" src ="static/images/icon-cart.svg" class="cart-avatar" alt="sneackers">
+      </div>
+      
+      <div class="avatar">
+        <img src ="static/images/image-avatar.png" class="cart-avatar" alt="sneackers">
+      </div>
+    </nav>
+
+    <main class="main-container">
+      
+      <section class="flex-section-one">
+        <div class="main-picture">
+          <img id ="idMainImg" src="static/images/image-product-1.jpg" class="img-size" alt="sneackers">
+          
+          <div class="img-buttons">
+            <div data-cell-index="3" class="previews-img classLightBox"></div>
+            <div data-cell-index="4" class="next-img classLightBox"></div>
+          </div>
+
+          <div class ="thumbnail-section">
+            <div>
+              <img data-cell-index="1" src ="static/images/image-product-1-thumbnail.jpg" class="fourPics" alt="sneackers">
+            </div>
+            <div>
+              <img data-cell-index="2" src ="static/images/image-product-2-thumbnail.jpg" class="fourPics" alt="sneackers">
+            </div>
+            <div>
+              <img data-cell-index="3" src ="static/images/image-product-3-thumbnail.jpg" class="fourPics" alt="sneackers">
+            </div>
+            <div>
+              <img data-cell-index="4" src ="static/images/image-product-4-thumbnail.jpg" class="fourPics" alt="sneackers">
+            </div>
+          </div>
+
+        </div>
+       
+      </section>
+
+      <section class="flex-section-two">
+        <div class ="title">
+          <h6>sneackers company</h6>
+          <h2>Fall Limited Edition <br> Sneackers</h3>
+        </div>
+        
+        <div class="item-description">
+            <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+              durable rubber outer sole, they will withstand everything the weather can offer.
+            </p>
+          </div>
+          
+          <div class="item-price"> 
+            <p class="price">$125.00<span class="discount"></span></p>
+            <p class="original-price"></p>
+          </div>
+        </div>
+
+        <!-- show in the basket or cart the ammount of items in number-->
+        <div class="buttoms-container">
+          <div class="btn">
+            <li><a data-cell-index="1" class="showQuantity">-</a></li>
+            <li><a id="idQuantity">0</a></li>
+            <li><a data-cell-index="2" class="showQuantity">+</a></li>
+          </div>
+
+          <div id ="id-add-to-basket" class="add-to-basket">
+            <img src="static/images/icon-cart.svg" alt="sneackers"><span>add to cart</span>
+          </div>
+        </div>
+        
+      </section>
+    </main>
+    <script src ="static/javaScript/mainJavaScript.js"></script>
+  
+  </body>
+</html>
