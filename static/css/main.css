@@ -23,7 +23,7 @@ body {
     cursor: pointer;
 }
 
-.hide-any-element {
+.hideAnyElement {
     display: none;
 }
 
@@ -105,13 +105,15 @@ body {
 .showGoods {
     grid-template-rows: 20% 2% 48% 40%;
     display: grid;
-    background-color: blue;
+    background-color:white;
     gap: 5px;
 }
 
 .topCart {
-    margin-left: 15px;
+    margin-left: 35px;
     margin-top: 5px;
+    font-size: large;
+    font-weight: bold;
 }
 
 .imageInfoPrice {
@@ -121,25 +123,38 @@ body {
     display: flex;
 }
 
-.limitedEdition {
+.limitedEdition p{
     margin-top: 15px;
 
 }
 
 .bin div{
-    display: inline-block;
+    margin-top: 35px;
+    cursor: pointer;
+}
+
+.display {
+    visibility: hidden;
 }
 
 .checkOutBasket {
-    width: 200px;
+    cursor: pointer;
+    width: 260px;
     margin-top: 10px;
-    margin-left: 15px;
+    margin-left: 35px;
     display: flex;
     height: 40px;
     color: white;
     background-color: orange;
     border-radius: 5px;
     border: 1px solid black;
+    justify-content: center;
+    display: flex;
+    
+}
+
+.checkOutBasket p {
+    margin:10px;
 }
 
 .showGoods img {
@@ -147,7 +162,7 @@ body {
     width: 60px;
     height: 60px;
     margin-top: 10px;
-    margin-left: 15px;
+    margin-left: 35px;
     border-radius: 10px;
 }
 
@@ -155,6 +170,7 @@ hr {
     position: inherit;
     top:20px;
 }
+
 .section-item-in-the-basket {
     position: relative;
     width: 350px;
@@ -190,7 +206,7 @@ hr {
   display: grid;
   gap: 5px;
   background-color: white;
-  min-width: 100vh;
+  min-height: 100vh;
 
 }
   
@@ -534,6 +550,7 @@ h2 {
     .main-container {
         display: table-row;
         flex-direction: row;
+        min-height: 100%;
         
     }
 
@@ -631,5 +648,52 @@ h2 {
         left: 2%;
         right: 2%;
     }
+
+    .checkOutBasket {
+        width: 90%;
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .showGoods {
+        grid-template-rows: 30% 15% 55% 40%;
+        display: grid;
+        background-color:white;
+        gap: 5px;
+    }
+    
+    .topCart {
+        margin-left:5%;
+        margin-top: 5px;
+        font-size: large;
+        font-weight: bold;
+    }
+    
+    .imageInfoPrice {
+        grid-template-columns: 100% 100% 100%;
+        flex-direction: row;
+        gap: 5%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .limitedEdition p{
+        margin-top: 15px;
+    
+    }
+    
+    
+    .show-shopping-basket {
+        box-shadow: 0px 0px 0px 0px;
+    }
+
+    .showGoods img {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .flex-section-two {
+        min-height: 100vh;
+     }
 
 }
