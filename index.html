@@ -11,35 +11,45 @@
   </head>
 
   <body>  
-    <div id ="mobile-nav" class="hide-any-element">
+    <div id ="mobile-nav" class="hideAnyElement">
       <div id ="close-menu" class="close"></div>
     </div>
 
-    <div id ="id-showing-basket" class="show-shopping-basket">
-      <div id="idCart" class="showGoods">
+    <div id ="id-showing-basket" class="show-shopping-basket hideAnyElement">
+      <div class="showGoods">
         <div class="topCart">cart</div>
         <div>
           <hr>
         </div>
+
         <div class="imageInfoPrice">
-          <div id="idImg"><img src="static/images/image-product-1.jpg"></div>
-          <div id="idInfo" class="limitedEdition">
-            <P id="idDescription">Limited Edition...</P>
-            <P id="idPrice"></P>
+
+          <div>
+            <img id ="idImg" src ="" class="display">
           </div>
-          <div id="idIconDelete" class="bin">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+
+          <div id="idInfo" class="limitedEdition">
+            <P id="idDescription" class="display"></P>
+          </div>
+
+          <div id="idIconDelete" class="bin display">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+              </svg>
+            </div>
           </div>
         </div>
-       <div id="idButtonDelete" class="checkOutBasket"><span>checkout</span>
-       </div>
+
+        <div id ="idButtonDelete" class= "checkOutBasket display">
+          <p>Checkout </p>
+        </div>
+
       </div>
     </div>
 
-    <div id ="id-activate-states-lightbox" class="hide-any-element">
+    <div id ="id-activate-states-lightbox" class="hideAnyElement">
 
       <div class ="square-lightbox">
         <div id="id-close-lightbox" class="close-lightbox"> </div>
@@ -165,6 +175,7 @@
         
       </section>
     </main>
+
     <script src ="static/javaScript/mainJavaScript.js"></script>
   
   </body>
