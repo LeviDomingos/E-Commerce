@@ -4,19 +4,19 @@ window.onload = function() {
 
     let mediaQ = window.matchMedia("(max-width: 700px)");
 
-    document.getElementById("id-toggle-menu").addEventListener("click", createMobileMenu);
-    document.getElementById("close-menu").addEventListener("click", closeMobileMenu);
+    document.getElementById("idToggleMenu").addEventListener("click", createMobileMenu);
+    document.getElementById("closeMenu").addEventListener("click", closeMobileMenu);
     document.getElementById("idIconDelete").addEventListener("click", deleteGoodsInTheBasket);
 
     document.querySelectorAll(".showQuantity").forEach(cell => cell.addEventListener("click", showNumberOfItemsIntheBasket));
 
-    document.getElementById("id-add-to-basket").addEventListener("click", addToCart);
+    document.getElementById("idAddToBasket").addEventListener("click", addToCart);
 
-    document.getElementById("id-shopping-basket").addEventListener("click", showShoppingBasket);
+    document.getElementById("idShoppingBasket").addEventListener("click", showShoppingBasket);
 
     document.getElementById("idMainImg").addEventListener("click",lightBoxPicture);
 
-    document.getElementById("id-close-lightbox").addEventListener("click", closeLightBox);
+    document.getElementById("idCloseLightbox").addEventListener("click", closeLightBox);
 
     document.querySelectorAll(".classLightBox").forEach(cell => cell.addEventListener("click", displayLightBoxPicture));
     
@@ -25,8 +25,8 @@ window.onload = function() {
 
 
     function createMobileMenu() {
-        document.getElementById("mobile-nav").classList.remove("hideAnyElement");
-        const listMenu = ["Collection", "Men", "Women", "About", "Contact"];
+        document.getElementById("mobileNav").classList.remove("hideAnyElement");
+        const listMenu = ["Collection", "Men", "Women", "About", "Contact"]
         for(let x = 0; x < listMenu.length; x++) {
             const element = document.createElement("li");
             element.innerText = listMenu[x];
@@ -35,19 +35,19 @@ window.onload = function() {
             element.style.marginTop ="55px";
             element.style.marginLeft ="25px";
             element.style.cursor ="pointer";
-            document.getElementById("mobile-nav").appendChild(element);
-            document.getElementById("mobile-nav").classList.add("mobile-menu");
+            document.getElementById("mobileNav").appendChild(element);
+            document.getElementById("mobileNav").classList.add("mobile-menu");
         }
      }
 
 
     function closeMobileMenu() {
-        const element = document.getElementById("mobile-nav");
-        while (element.lastChild.id !== 'close-menu') {
+        const element = document.getElementById("mobileNav");
+        while (element.lastChild.id !== 'closeMenu') {
             element.removeChild(element.lastChild);
         }
-        document.getElementById("mobile-nav").classList.add("hideAnyElement");
-        document.getElementById("mobile-nav").classList.remove("mobile-menu");
+        document.getElementById("mobileNav").classList.add("hideAnyElement");
+        document.getElementById("mobileNav").classList.remove("mobile-menu");
     }
 
     /** this code adds and take away the amount of items in the basket */
@@ -67,7 +67,7 @@ window.onload = function() {
 
     /** after addidng and taking away i show it on the cart the quantity */
     function addToCart() {
-        const element = document.getElementById("id-items");
+        const element = document.getElementById("idItems");
         if(itemsQuantity > 0) {
             element.classList.remove("hideAnyElement");
             element.classList.add("show-quantity-in-the-cart");
@@ -89,7 +89,7 @@ window.onload = function() {
 
         const info = document.getElementById("idDescription");
         const img = document.getElementById("idImg");
-        document.getElementById("id-showing-basket").classList.remove("hideAnyElement");
+        document.getElementById("idShowingBasket").classList.remove("hideAnyElement");
         
         if(itemsQuantity === 0) {
             /**show goods the the user select an item
@@ -134,9 +134,7 @@ window.onload = function() {
                 info.innerText += "$" + price + ".00" + " x " + itemsQuantity + " $" + totalPrice + ".00";
                 info.style.color ="gray";
             }
-        
         }
-
     }
 
     function deleteGoodsInTheBasket() {
@@ -198,20 +196,20 @@ window.onload = function() {
     /* allow the lightbox only to be displayed over 700px screen */
     function lightBoxPicture() {
         if(!mediaQ.matches) {
-            const element = document.getElementById("id-activate-states-lightbox");
+            const element = document.getElementById("idActivateStatesLightbox");
             element.classList.remove("hideAnyElement");
             element.classList.add("light-box-picture");        
-            document.getElementById("id-close-lightbox").classList.add("close-lightbox");
+            document.getElementById("idCloseLightbox").classList.add("close-lightbox");
         }
     }
 
     function closeLightBox() {
-        const element = document.getElementById("id-activate-states-lightbox");
-        const removeClassLightElement = document.getElementById("id-activate-states-lightbox");
+        const element = document.getElementById("idActivateStatesLightbox");
+        const removeClassLightElement = document.getElementById("idActivateStatesLightbox");
         removeClassLightElement.classList.remove("light-box-picture")
         removeClassLightElement.classList.add("hideAnyElement");
         
-        const removeClassCloseElement = document.getElementById("id-close-lightbox");
+        const removeClassCloseElement = document.getElementById("idCloseLightbox");
         removeClassCloseElement.classList.remove("close-lightbox");
     }
 }
