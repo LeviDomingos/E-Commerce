@@ -2,7 +2,7 @@ let itemsQuantity = 0;
 let showPicture = 1;
 window.onload = function() {
 
-    let mediaQ = window.matchMedia("(max-width: 700px)");
+    let mediaQ = window.matchMedia("(max-width: 950px)");
 
     document.getElementById("idToggleMenu").addEventListener("click", createMobileMenu);
     document.getElementById("closeMenu").addEventListener("click", closeMobileMenu);
@@ -195,7 +195,7 @@ window.onload = function() {
 
     /* allow the lightbox only to be displayed over 700px screen */
     function lightBoxPicture() {
-        if(!mediaQ.matches & window.matchMedia("(orientation: landscape)").matches) {
+        if(!mediaQ.matches) {
             const element = document.getElementById("idActivateStatesLightBox");
             element.classList.remove("hideAnyElement");
             element.classList.add("lightBoxPicture");        
