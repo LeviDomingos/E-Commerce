@@ -16,11 +16,11 @@ window.onload = function() {
 
     document.getElementById("idMainImg").addEventListener("click",lightBoxPicture);
 
-    document.getElementById("idCloseLightbox").addEventListener("click", closeLightBox);
+    document.getElementById("idCloseLightBox").addEventListener("click", closeLightBox);
 
     document.querySelectorAll(".classLightBox").forEach(cell => cell.addEventListener("click", displayLightBoxPicture));
     
-    document.querySelectorAll(".fourLightboxImgs").forEach(cell => cell.addEventListener("click", switchPicturesOnMain));
+    document.querySelectorAll(".fourLightBoxImgs").forEach(cell => cell.addEventListener("click", switchPicturesOnMain));
     document.querySelectorAll(".fourPics").forEach(cell => cell.addEventListener("click", selectingPicture));
 
 
@@ -36,7 +36,7 @@ window.onload = function() {
             element.style.marginLeft ="25px";
             element.style.cursor ="pointer";
             document.getElementById("mobileNav").appendChild(element);
-            document.getElementById("mobileNav").classList.add("mobile-menu");
+            document.getElementById("mobileNav").classList.add("mobileMenu");
         }
      }
 
@@ -47,7 +47,7 @@ window.onload = function() {
             element.removeChild(element.lastChild);
         }
         document.getElementById("mobileNav").classList.add("hideAnyElement");
-        document.getElementById("mobileNav").classList.remove("mobile-menu");
+        document.getElementById("mobileNav").classList.remove("mobileMenu");
     }
 
     /** this code adds and take away the amount of items in the basket */
@@ -70,12 +70,12 @@ window.onload = function() {
         const element = document.getElementById("idItems");
         if(itemsQuantity > 0) {
             element.classList.remove("hideAnyElement");
-            element.classList.add("show-quantity-in-the-cart");
+            element.classList.add("showQuantityInTheCart");
             element.innerText = itemsQuantity;
         }
         else {
             element.innerText = "";
-            element.classList.remove("show-quantity-in-the-cart");
+            element.classList.remove("showQuantityInTheCart");
             element.classList.add("hideAnyElment");
         }
     }
@@ -155,11 +155,11 @@ window.onload = function() {
 
         if(cellIndex === 1 && showPicture > 1) {
             --showPicture;
-            document.getElementById("idSquareLightboxMainImg").src = "static/images/image-product-" + showPicture + ".jpg";
+            document.getElementById("idSquareLightBoxMainImg").src = "static/images/image-product-" + showPicture + ".jpg";
         }
         if(cellIndex === 2 && showPicture <= 3) {
             ++showPicture;
-            document.getElementById("idSquareLightboxMainImg").src = "static/images/image-product-" + showPicture + ".jpg";
+            document.getElementById("idSquareLightBoxMainImg").src = "static/images/image-product-" + showPicture + ".jpg";
         }
         if(cellIndex === 3 && showPicture > 1 ) {
             --showPicture;
@@ -179,7 +179,7 @@ window.onload = function() {
     function switchPicturesOnMain(event) {
         const cellValue = event.target;
         const cellIndex = parseInt(cellValue.getAttribute('data-cell-index'));
-        document.getElementById("idSquareLightboxMainImg").src = "static/images/image-product-" + cellIndex + ".jpg";
+        document.getElementById("idSquareLightBoxMainImg").src = "static/images/image-product-" + cellIndex + ".jpg";
     }
 
     /** tthis function deals with  thumbnail. when the user click on any picture or
@@ -195,21 +195,21 @@ window.onload = function() {
 
     /* allow the lightbox only to be displayed over 700px screen */
     function lightBoxPicture() {
-        if(!mediaQ.matches) {
-            const element = document.getElementById("idActivateStatesLightbox");
+        if(!mediaQ.matches & window.matchMedia("(orientation: landscape)").matches) {
+            const element = document.getElementById("idActivateStatesLightBox");
             element.classList.remove("hideAnyElement");
-            element.classList.add("light-box-picture");        
-            document.getElementById("idCloseLightbox").classList.add("close-lightbox");
+            element.classList.add("lightBoxPicture");        
+            document.getElementById("idCloseLightBox").classList.add("closeLightBox");
         }
     }
 
     function closeLightBox() {
-        const element = document.getElementById("idActivateStatesLightbox");
-        const removeClassLightElement = document.getElementById("idActivateStatesLightbox");
-        removeClassLightElement.classList.remove("light-box-picture")
+        const element = document.getElementById("idActivateStatesLightBox");
+        const removeClassLightElement = document.getElementById("idActivateStatesLightBox");
+        removeClassLightElement.classList.remove("lightBoxPicture")
         removeClassLightElement.classList.add("hideAnyElement");
         
-        const removeClassCloseElement = document.getElementById("idCloseLightbox");
-        removeClassCloseElement.classList.remove("close-lightbox");
+        const removeClassCloseElement = document.getElementById("idCloseLightBox");
+        removeClassCloseElement.classList.remove("closeLightBox");
     }
 }
