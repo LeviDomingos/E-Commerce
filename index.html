@@ -15,7 +15,7 @@
       <div id ="closeMenu" class="close"></div>
     </div>
 
-    <div id ="idShowingBasket" class="show-shopping-basket hideAnyElement">
+    <div id ="idShowingBasket" class="showShoppingBasket hideAnyElement">
       <div class="showGoods">
         <div class="topCart">cart</div>
         <div>
@@ -49,23 +49,23 @@
       </div>
     </div>
 
-    <div id ="idActivateStatesLightbox" class="hideAnyElement">
+    <div id ="idActivateStatesLightBox" class="hideAnyElement">
 
-      <div class ="square-lightbox">
-        <div id="idCloseLightbox" class="close-lightbox"> </div>
+      <div class ="squareLightBox">
+        <div id="idCloseLightBox" class="closeLightBox"> </div>
 
-        <img id ="idSquareLightboxMainImg"src="static/images/image-product-1.jpg" class="square-lightbox-main-img">
+        <img id ="idSquareLightBoxMainImg"src="static/images/image-product-1.jpg" class="squareLightBoxMainImg">
         
-        <div class="img-buttons-lightbox">
-          <div data-cell-index="1" class="lightbox-previews-img classLightBox"></div>
-          <div data-cell-index="2" class="lightbox-next-img classLightBox"></div>
+        <div class="imgButtonsLightBox">
+          <div data-cell-index="1" class="lightBoxPreviewsImg classLightBox"></div>
+          <div data-cell-index="2" class="lightBoxNextImg classLightBox"></div>
         </div>
 
-        <div class="thumbnail-lightbox">
-          <div><img data-cell-index="1" src="static/images/image-product-1-thumbnail.jpg" class="fourLightboxImgs" alter="sneackers"></div>
-          <div><img data-cell-index="2" src="static/images/image-product-2-thumbnail.jpg" class="fourLightboxImgs" alter="sneackers"></div>
-          <div><img data-cell-index="3" src="static/images/image-product-3-thumbnail.jpg" class="fourLightboxImgs" alter="sneackers"></div>
-          <div><img data-cell-index="4" src="static/images/image-product-4-thumbnail.jpg" class="fourLightboxImgs" alter="sneackers"></div>
+        <div class="thumbnailLightBox">
+          <div><img data-cell-index="1" src="static/images/image-product-1-thumbnail.jpg" class="fourLightBoxImgs" alter="sneackers"></div>
+          <div><img data-cell-index="2" src="static/images/image-product-2-thumbnail.jpg" class="fourLightBoxImgs" alter="sneackers"></div>
+          <div><img data-cell-index="3" src="static/images/image-product-3-thumbnail.jpg" class="fourLightBoxImgs" alter="sneackers"></div>
+          <div><img data-cell-index="4" src="static/images/image-product-4-thumbnail.jpg" class="fourLightBoxImgs" alter="sneackers"></div>
         </div>
 
       </div>
@@ -73,9 +73,9 @@
     </div>
 
     
-    <nav class="nav-container">
+    <nav class="navContainer">
 
-      <div id ="idToggleMenu" class="toggle-menu">
+      <div id ="idToggleMenu" class="toggleMenu">
         <div></div>
         <div></div>
         <div></div>
@@ -105,26 +105,26 @@
       <div id ="shoppingCart" class="cart">
         <div id ="idItems" class=""></div>
         
-        <img id ="idShoppingBasket" src ="static/images/icon-cart.svg" class="cart-avatar" alt="sneackers">
+        <img id ="idShoppingBasket" src ="static/images/icon-cart.svg" class="cartAvatar" alt="sneackers">
       </div>
       
       <div class="avatar">
-        <img src ="static/images/image-avatar.png" class="cart-avatar" alt="sneackers">
+        <img src ="static/images/image-avatar.png" class="cartAvatar" alt="sneackers">
       </div>
     </nav>
 
-    <main class="main-container">
+    <main class="mainContainer">
       
-      <section class="flex-section-one">
-        <div class="main-picture">
-          <img id ="idMainImg" src="static/images/image-product-1.jpg" class="img-size" alt="sneackers">
+      <section class="flexSectionOne">
+        <div class="mainPicture">
+          <img id ="idMainImg" src="static/images/image-product-1.jpg" class="imgSize" alt="sneackers">
           
-          <div class="img-buttons">
-            <div data-cell-index="3" class="previews-img classLightBox"></div>
-            <div data-cell-index="4" class="next-img classLightBox"></div>
+          <div class="imgButtons">
+            <div data-cell-index="3" class="previewsImg classLightBox"></div>
+            <div data-cell-index="4" class="nextImg classLightBox"></div>
           </div>
 
-          <div class ="thumbnail-section">
+          <div class ="thumbnailSection">
             <div>
               <img data-cell-index="1" src ="static/images/image-product-1-thumbnail.jpg" class="fourPics" alt="sneackers">
             </div>
@@ -143,33 +143,33 @@
        
       </section>
 
-      <section class="flex-section-two">
+      <section class="flexSectionTwo">
         <div class ="title">
           <h6>sneackers company</h6>
           <h2>Fall Limited Edition <br> Sneackers</h3>
         </div>
         
-        <div class="item-description">
+        <div class="itemDescription">
             <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
               durable rubber outer sole, they will withstand everything the weather can offer.
             </p>
           </div>
           
-          <div class="item-price"> 
+          <div class="itemPrice"> 
             <p class="price">$125.00<span class="discount"></span></p>
-            <p class="original-price"></p>
+            <p class="originalPrice"></p>
           </div>
         </div>
 
         <!-- show in the basket or cart the ammount of items in number-->
-        <div class="buttoms-container">
+        <div class="buttomsContainer">
           <div class="btn">
             <li><a data-cell-index="1" class="showQuantity">-</a></li>
             <li><a id="idQuantity">0</a></li>
             <li><a data-cell-index="2" class="showQuantity">+</a></li>
           </div>
 
-          <div id ="idAddToBasket" class="add-to-basket">
+          <div id ="idAddToBasket" class="addToBasket">
             <img src="static/images/icon-cart.svg" alt="sneackers"><span>add to cart</span>
           </div>
         </div>
