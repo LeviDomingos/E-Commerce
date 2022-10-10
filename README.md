@@ -38,12 +38,10 @@ Users should be able to:
 
 ![](static/images/e-comerce.jpg)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
 ### Links
 
-- [Solution URL:] (https://github.com/LeviDomingos/E-Commerce)
-- [Live Site URL:] (https://levidomingos.github.io/E-Commerce/)
+- [gitHub] (https://github.com/LeviDomingos/E-Commerce) - Project 
+- [Live Page] (https://levidomingos.github.io/E-Commerce/) - Live gitHub Page
 
 ## My process
  1. Started by downloading the entire project from learning people to my laptop
@@ -245,10 +243,10 @@ One of the things that I struggle with is make functions more re-usable through 
 
 ### Useful resources
 
-- [Example resource 1](https://developer.mozilla.org/en-US/) - This helped me to understand how flexbox works and the grid system too. True source of Frontend information indeed. 
-- [Example resource 2](https://css-tricks.com) - This is an amazing article which helped me finally understand css. I'd recommend it to anyone still learning frontend.
-- [Example resource 3](https://www.w3schools.com) - I think that every one heard and knows about w3schools! I find it very helpful when come to Semantic HTML5. 
-[Example resource 4](https://stackoverflow.com) - Here is whre the biggest tech community lives &#65; &#66; &#67;
+- [Developer Mozilla](https://developer.mozilla.org/en-US/) - This helped me to understand how flexbox works and the grid system too. True source of Frontend information indeed. 
+- [CSS Tricks](https://css-tricks.com) - This is an amazing article which helped me finally understand css. I'd recommend it to anyone still learning frontend.
+- [w3schools](https://www.w3schools.com) - I think that every one heard and knows about w3schools! I find it very helpful when come to Semantic HTML5. 
+[stackoverflow Community](https://stackoverflow.com) - Here is whre the biggest tech community lives &#65; &#66; &#67;
 
 
 ## Author
