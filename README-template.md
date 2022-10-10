@@ -253,7 +253,7 @@ One of the things that I struggle with is make functions more re-usable through 
 
 ## Author
 
-- Website - [Add your name here](https://levidomingos.github.io/E-Commerce/)
+- Website - [Levi Domingos](https://levidomingos.github.io/E-Commerce/)
 - Frontend Mentor - [@Alex Ford ]()
 
 ## Acknowledgments
