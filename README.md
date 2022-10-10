@@ -40,8 +40,8 @@ Users should be able to:
 
 ### Links
 
-- [gitHub] (https://github.com/LeviDomingos/E-Commerce) - Project 
-- [Live Page] (https://levidomingos.github.io/E-Commerce/) - Live gitHub Page
+- [gitHub](https://github.com/LeviDomingos/E-Commerce) - Project 
+- [Live Page](https://levidomingos.github.io/E-Commerce/) - Live gitHub Page
 
 ## My process
  1. Started by downloading the entire project from learning people to my laptop
