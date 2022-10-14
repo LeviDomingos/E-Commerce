@@ -15,7 +15,7 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-- [X-tra Info](#Additional Information)
+- [X-tra Info](#Additional-Information)
 
 
 ## Overview
