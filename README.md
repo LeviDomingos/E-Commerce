@@ -15,8 +15,7 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
-- [Extra Info](#Additional Information)
+- [X-tra Info](#Additional Information)
 
 
 ## Overview
@@ -262,7 +261,7 @@ To my mentor Alex Ford, a great thank you for your help and patience above all f
 
 I bought two books, a Frontend book by Paul McFedriess and JavaScript by  
 
-###Additional Information
+### Additional Information
 
 1 - There is no way of clossing the cart or basket (not on assigment)
 2 - The mobile menu may colide with the cart if the cart is opened
@@ -274,7 +273,7 @@ I bought two books, a Frontend book by Paul McFedriess and JavaScript by
 8 - There is quiet few warning on HTML and Javascript. On HTML has to do with background color. which is not a error but advice. I did not address the issue so not to compromise on appereance of the page. Regarding JavaScript the issue has to do with ESLint sugestion. 
 9 -  I still learing frontend indeed...
 
-##Testing Checklist
+# Testing Checklist
 
 - HTML and CSS Validation
 
@@ -282,7 +281,7 @@ I bought two books, a Frontend book by Paul McFedriess and JavaScript by
 
 - I used the W3C CSS Validator tool to validate my CSS code.
 
-##Deployment
+# Deployment
 
 The hosting platform used for my project is GitHub Pages. To deploy my project to GitHub pages, I implemented the following steps:
 
