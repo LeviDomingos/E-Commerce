@@ -1,8 +1,9 @@
-let itemsQuantity = 0;
-let showPicture = 1;
-window.onload = function() {
+"use strict";
+let itemsQuantity = 0; // store the amount of items the user put in the basket
+let showPicture = 1; // control pictures display on the main img and lightbox 
 
-    let mediaQ = window.matchMedia("(max-width: 950px)");
+window.onload = function() {
+  
 
     document.getElementById("idToggleMenu").addEventListener("click", createMobileMenu);
     document.getElementById("closeMenu").addEventListener("click", closeMobileMenu);
@@ -24,12 +25,13 @@ window.onload = function() {
     document.querySelectorAll(".fourPics").forEach(cell => cell.addEventListener("click", selectingPicture));
 
 
+    // create the mobile menu 
     function createMobileMenu() {
         document.getElementById("mobileNav").classList.remove("hideAnyElement");
         const listMenu = ["Collection", "Men", "Women", "About", "Contact"]
-        for(let x = 0; x < listMenu.length; x++) {
+        listMenu.map((menu) => {
             const element = document.createElement("li");
-            element.innerText = listMenu[x];
+            element.innerText = menu;
             element.style.fontWeight ="bold";
             element.style.display ="block";
             element.style.marginTop ="55px";
@@ -37,10 +39,10 @@ window.onload = function() {
             element.style.cursor ="pointer";
             document.getElementById("mobileNav").appendChild(element);
             document.getElementById("mobileNav").classList.add("mobileMenu");
-        }
+        });
      }
 
-
+     // the x that clase the mobile
     function closeMobileMenu() {
         const element = document.getElementById("mobileNav");
         while (element.lastChild.id !== 'closeMenu') {
@@ -92,13 +94,11 @@ window.onload = function() {
         document.getElementById("idShowingBasket").classList.remove("hideAnyElement");
         
         if(itemsQuantity === 0) {
-            /**show goods the the user select an item
-             * this the goods picture
-             */
+            // when the basket is emtpy 
             info.classList.remove("display" ,"hideAnyElement");
             info.innerText = "your basket is empty";
             info.style.color ="gray";
-            /*info.style.marginTop ="25px";*/
+    
             document.getElementById("idIconDelete").classList.add("display");
             document.getElementById("idButtonDelete").classList.add("display");
             img.classList.add("display");
@@ -106,6 +106,8 @@ window.onload = function() {
 
         }
         else {
+
+            //when there is good in the basket or cart
 
             const img = document.getElementById("idImg");
             document.getElementById("idIconDelete").classList.remove("display");
@@ -137,6 +139,8 @@ window.onload = function() {
         }
     }
 
+
+    // delete all goods in the cart or basket
     function deleteGoodsInTheBasket() {
 
         itemsQuantity = 0 ;
@@ -146,9 +150,7 @@ window.onload = function() {
         addToCart();
     }
 
-    /** this function shows the pictuires in the main image
-     * i use this function to display on both cases on lightbox too
-     */
+    //this function shows the pictuires in the main image and lightbox too
     function displayLightBoxPicture(event) {
         const cellValue = event.target;
         const cellIndex = parseInt(cellValue.getAttribute("data-cell-index"));
@@ -171,10 +173,8 @@ window.onload = function() {
         }
     }
 
-    /** tthis function deals with  thumbnail. when the user click on any of them 
-     * the picture that the user selected is displayed on the main img
-     * here only deals with lightbox scenary.
-    */
+    //when the user click on lightbox then 
+    //the picture that the user selected is displayed on the lightboxmain img
 
     function switchPicturesOnMain(event) {
         const cellValue = event.target;
@@ -182,9 +182,7 @@ window.onload = function() {
         document.getElementById("idSquareLightBoxMainImg").src = "static/images/image-product-" + cellIndex + ".jpg";
     }
 
-    /** tthis function deals with  thumbnail. when the user click on any picture or
-     * image the picture displayes on the main img.
-    */
+    // tthis function deals with  thumbnail. when the user click on any picture or
     function selectingPicture(event) {
         const cellValue = event.target;
         const cellIndex = parseInt(cellValue.getAttribute("data-cell-index"));
@@ -193,7 +191,7 @@ window.onload = function() {
 
     }
 
-    /* allow the lightbox only to be displayed over 700px screen */
+    //allow the lightbox only to be displayed over 950px screen
     function lightBoxPicture() {
         if(!mediaQ.matches) {
             const element = document.getElementById("idActivateStatesLightBox");
@@ -212,4 +210,6 @@ window.onload = function() {
         const removeClassCloseElement = document.getElementById("idCloseLightBox");
         removeClassCloseElement.classList.remove("closeLightBox");
     }
+
+    let mediaQ = window.matchMedia("(max-width: 950px)");
 }
