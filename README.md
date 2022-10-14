@@ -16,6 +16,8 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
+-[Extra Info.](#Additional Information)
+
 
 ## Overview
 
@@ -259,3 +261,15 @@ One of the things that I struggle with is make functions more re-usable through 
 To my mentor Alex Ford, a great thank you for your help and patience above all for your guidance. Because of you I started buying I.T books again, something that gave up many many years ago. 
 
 I bought two books, a Frontend book by Paul McFedriess and JavaScript by  
+
+##Additional Information
+
+1 - There is no way of clossing the cart or basket (not on assigment)
+2 - The mobile menu may colide with the cart if the cart is opened
+3 - The checkout buttom does not work either (not on assigment)
+4 - I tried to use Google font but would not allow me to do so, getting warning all the time...
+5 - I only used the cart, avatar and pictures but everything else I tried to create it myself 
+6 - The backgroung image would not work or display at all therefore chose to use a background color
+7 - When I tested on Google Developer Tool different screen sizes did work fine but on real devices - samsung with height 600 the lightbox did not work as expected.  
+8 -  I still leraning frontend indeed...
+
