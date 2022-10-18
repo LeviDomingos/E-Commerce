@@ -502,7 +502,7 @@ h2 {
     font-weight: bold;
 }
 
-.btn #minus, #plus {
+.btn .minus, .plus {
     color: orange;
     text-align: center;
 }
