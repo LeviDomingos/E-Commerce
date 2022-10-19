@@ -496,15 +496,16 @@ h2 {
     opacity: 0.5;
 }
 
-.btn li {
+.btn ul li {
     display: inline-block;
     list-style-type: none;
     font-weight: bold;
-}
-
-.btn .minus, .plus {
     color: orange;
     text-align: center;
+}
+
+.black {
+    color: black;
 }
 
 @media screen and (max-width:700px) {
